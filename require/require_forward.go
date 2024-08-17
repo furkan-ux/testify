@@ -3,7 +3,7 @@
 package require
 
 import (
-	assert "github.com/stretchr/testify/assert"
+	assert "github.com/furkan-ux/testify/assert"
 	time "time"
 )
 
