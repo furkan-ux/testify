@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 <!-- If this is a question, consider using the discussion section of this repo -->
-<!-- Here: https://github.com/stretchr/testify/discussions/new?category=q-a -->
+<!-- Here: https://github.com/furkan-ux/testify/discussions/new?category=q-a -->
 
 ## Description
 <!-- A detailed description of the bug -->

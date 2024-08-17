@@ -33,8 +33,8 @@
 //	// Basic imports
 //	import (
 //	    "testing"
-//	    "github.com/stretchr/testify/assert"
-//	    "github.com/stretchr/testify/suite"
+//	    "github.com/furkan-ux/testify/assert"
+//	    "github.com/furkan-ux/testify/suite"
 //	)
 //
 //	// Define the suite, and absorb the built-in basic suite
