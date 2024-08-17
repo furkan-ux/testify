@@ -151,6 +151,7 @@ func (m *MockTestingT) FailNow() {
 func Test_Mock_TestData(t *testing.T) {
 
 	var mockedService = new(TestExampleImplementation)
+
 	mockedService = mockedService
 }
 
