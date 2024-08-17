@@ -13,7 +13,6 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 	"github.com/pmezard/go-difflib/difflib"
-	"github.com/stretchr/objx"
 
 	"github.com/furkan-ux/testify/assert"
 )
@@ -288,10 +287,6 @@ type Mock struct {
 	// invalid mock call was made.
 	test TestingT
 
-	// TestData holds any data that might be useful for testing.  Testify ignores
-	// this data completely allowing you to do whatever you like with it.
-	testData objx.Map
-
 	mutex sync.Mutex
 }
 
@@ -301,16 +296,6 @@ type Mock struct {
 // without acquiring the mutex, which is detected by go test -race.
 func (m *Mock) String() string {
 	return fmt.Sprintf("%[1]T<%[1]p>", m)
-}
-
-// TestData holds any data that might be useful for testing.  Testify ignores
-// this data completely allowing you to do whatever you like with it.
-func (m *Mock) TestData() objx.Map {
-	if m.testData == nil {
-		m.testData = make(objx.Map)
-	}
-
-	return m.testData
 }
 
 /*
